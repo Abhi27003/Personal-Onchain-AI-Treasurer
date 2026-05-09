@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Sidebar from './components/layout/Sidebar.jsx';
-import TopBar from './components/layout/TopBar.jsx';
+// import TopBar from './components/layout/Topbar.jsx';
 
 import Dashboard from './pages/Dashboard.jsx';
 import AIChat from './pages/AIChat.jsx';
@@ -18,7 +18,7 @@ function Layout() {
   return (
     <div className="min-h-screen bg-[#0f1117] text-slate-200">
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-      <TopBar onMenuClick={() => setSidebarOpen(true)} />
+      {/* <TopBar onMenuClick={() => setSidebarOpen(true)} /> */}
 
       <main className="lg:pl-60 pt-[72px]">
         <div className="p-5 max-w-[1400px]">
